@@ -22,8 +22,8 @@ calls are reached
 the excution where it left off in the last code listing
 ```JS
     function multiply(x, y) {
-    return x * y;
-}
+        return x * y;
+    }
 
     function square(x) {
         return multiply(x, x);
@@ -36,7 +36,7 @@ the excution where it left off in the last code listing
     isRightTrinagle(3, 4, 5)
     console.log('After')
 ```
-- http://latentflip.com/loup
+- http://latentflip.com/loupe/
 
 ### Introduction: callbacks
 
@@ -45,12 +45,33 @@ the excution where it left off in the last code listing
 
 #### WebAPI and Single Threaded: Example:
 
-- JS is a single threaded
+- JS is a single threaded: 
     What does that mean
     At any give point in time, that single JS thread is running at most
     one line of JS code
-- If I make Web API call and it takes 5 or 10 second
+- If I make Web API call and it takes 5 or 10 second:
     What happens when something takes a long time?
 
-Fortunately we have workaround
-    - Callback
+- Fortunately we have workaround: Callback
+
+- http://latentflip.com/loupe/?code=Y29uc29sZS5sb2coIlNlbmRpbmcgcmVxdWVzdCB0byBzZXJ2ZXIhIikKc2V0VGltZW91dChmdW5jdGlvbigpIHsKICAgIGNvbnNvbGUubG9nKCJIZXJlIGlzIHlvdXIgZGF0YSBmcm9tIHRoZSBzZXJ2ZXIuLi4iKQp9LCAzMDAwKQpjb25zb2xlLmxvZygiSSBBTSBBVCBUSEUgRU5EIE9GIFRIRSBGSUxFISIp!!!
+
+```JS
+console.log('Sending request to the server')
+setTimeout(() => {
+    console.log("Here is your data from ther server...")
+}, 3000)
+console.log('I am at the end of the file');
+```
+
+- Browser does the work
+
+- OK BUT HOW?
+    1. Browsers come with Web APIs that are able to handle certain tasks in the background
+    (liking making requests or setTimoeot)
+    2. The JS call stack recognizes these Web API functions and passes them off to the
+    browsers to take care off
+    3. Once the browser finishes those tasks, they return and are pushed onto the stack as 
+    a callback
+
+    Callback Hell:
