@@ -20,22 +20,7 @@ functions are called from within that functions, etc
 calls are reached
 - When the current function is finished, the interpreter takes it off the stack and resumes
 the excution where it left off in the last code listing
-```JS
-    function multiply(x, y) {
-        return x * y;
-    }
-
-    function square(x) {
-        return multiply(x, x);
-    }
-
-    function isRightTrinagle(a, b, c) {
-        return square(a) + square(b) === square(c)
-    }
-    console.log('Before')
-    isRightTrinagle(3, 4, 5)
-    console.log('After')
-```
+- Check folder callstack
 - http://latentflip.com/loupe/
 
 ### Introduction: callbacks
@@ -74,4 +59,4 @@ console.log('I am at the end of the file');
     3. Once the browser finishes those tasks, they return and are pushed onto the stack as 
     a callback
 
-    Callback Hell:
+
