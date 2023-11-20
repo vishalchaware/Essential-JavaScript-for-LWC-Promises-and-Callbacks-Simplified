@@ -1,18 +1,17 @@
  // Example 1
- setTimeout(() => {
-    document.body.style.backgroundColor = 'red';
-}, 1000);
+//  setTimeout(() => {
+//     document.body.style.backgroundColor = 'red';
+// }, 1000);
 
-setTimeout(() => {
-    document.body.style.backgroundColor = 'red';
-}, 2000)
+// setTimeout(() => {
+//     document.body.style.backgroundColor = 'red';
+// }, 2000)
 
-setTimeout(() => {
-    document.body.style.backgroundColor = 'red';
-}, 3000)
+// setTimeout(() => {
+//     document.body.style.backgroundColor = 'red';
+// }, 3000)
 
 // Example 2
-
 // ===============
 // YIKES!!!!!!!!!!!
 // ===============
@@ -32,26 +31,26 @@ setTimeout(() => {
 //     }, 1000)
 // }, 1000)
 
+// Example 3
+// const delayedColorChange = (newColor, delay, doNext) => {
+//     setTimeout(() => {
+//         document.body.style.backgroundColor = newColor;
+//         doNext && doNext();
+//     }, delay)
+// }
 
-const delayedColorChange = (newColor, delay, doNext) => {
-    setTimeout(() => {
-        document.body.style.backgroundColor = newColor;
-        doNext && doNext();
-    }, delay)
-}
+// // STILL A LOT OF NESTING!!!
+// delayedColorChange('red', 1000, () => {
+//     delayedColorChange('orange', 1000, () => {
+//         delayedColorChange('yellow', 1000, () => {
+//             delayedColorChange('green', 1000, () => {
+//                 delayedColorChange('blue', 1000, () => {
 
-// STILL A LOT OF NESTING!!!
-delayedColorChange('red', 1000, () => {
-    delayedColorChange('orange', 1000, () => {
-        delayedColorChange('yellow', 1000, () => {
-            delayedColorChange('green', 1000, () => {
-                delayedColorChange('blue', 1000, () => {
-
-                })
-            })
-        })
-    })
-});
+//                 })
+//             })
+//         })
+//     })
+// });
 
 
 // searchMoviesAPI('amadeus', () => {

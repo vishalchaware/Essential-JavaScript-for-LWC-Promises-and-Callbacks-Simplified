@@ -1,11 +1,13 @@
 ## Essential JavaScript for LWC: Promises and Callbacks Simplified
-    1. Error Handling in promises
-    2. this keyword behavior based on arrow function vs traditional declaration, 
-    3. JEST tests for promises. 
-    4. Basics of Asynchronous Programming (3-4 minutes) 
-    5. Introduction to Callback Functions (3 minutes)
-    6. Introduction to Promises(10 minute) 
-    7. Practical Implementation in LWC(5)
+    1. What is call stack
+    2. Introduction: callbacks
+    3. What is callback hell
+    4. The Magic of promises
+    5. Creating our own promises
+    6. Error Handling in promises
+    7. Practical Implementation in LWC
+    8. this keyword behavior based on arrow function vs traditional declaration
+    9. JEST tests for promises. 
 
 
 ### What is call stack
