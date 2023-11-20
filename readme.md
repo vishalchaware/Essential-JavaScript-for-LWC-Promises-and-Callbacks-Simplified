@@ -1,4 +1,4 @@
-##Essential JavaScript for LWC: Promises and Callbacks Simplified
+## Essential JavaScript for LWC: Promises and Callbacks Simplified
     1. Error Handling in promises
     2. this keyword behavior based on arrow function vs traditional declaration, 
     3. JEST tests for promises. 
@@ -8,7 +8,7 @@
     7. Practical Implementation in LWC(5)
 
 
-###What is call stack
+### What is call stack
 
 - The Mechanism the JS interpreter uses to keep track of its place in a script that calls
 multiple functions. 
@@ -38,12 +38,12 @@ the excution where it left off in the last code listing
 ```
 - http://latentflip.com/loup
 
-###Introduction: callbacks
+### Introduction: callbacks
 
 - Many functions are provided by JavaScript host environments that allow you to schedule asynchronous actions. In other words, actions that we initiate now, but they finish later.
 - For instance, one such function is the setTimeout function.
 
-####WebAPI and Single Threaded: Example:
+#### WebAPI and Single Threaded: Example:
 
 - JS is a single threaded
     What does that mean
