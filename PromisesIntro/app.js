@@ -9,6 +9,11 @@ const fakeRequestCallback = (url, success, failure) => {
         }
     }, delay)
 }
+
+let promise = new Promise(function(resolve, reject) {
+    // executor (the producing code, "singer")
+});
+
 // THE PROMISE VERSION 
 const fakeRequestPromise = (url) => {
     return new Promise((resolve, reject) => {

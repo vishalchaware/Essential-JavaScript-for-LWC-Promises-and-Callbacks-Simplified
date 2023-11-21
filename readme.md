@@ -1,14 +1,28 @@
 ## Essential JavaScript for LWC: Promises and Callbacks Simplified
-    1. What is call stack
-    2. Introduction: callbacks
-    3. What is callback hell
-    4. The Magic of promises
-    5. Creating our own promises
-    6. Error Handling in promises
-    7. Practical Implementation in LWC
-    8. this keyword behavior based on arrow function vs traditional declaration
-    9. JEST tests for promises. 
+    1. Arrow function 
+    2. Arrow function and this
+    3. What is call stack
+    4. Introduction: callbacks
+    5. What is callback hell
+    6. The Magic of promises
+    7. Creating our own promises
+    8. Error Handling in promises
+    9. Practical Implementation in LWC
+    10. this keyword behavior based on arrow function vs traditional declaration
+    11. JEST tests for promises. 
 
+### What is Arrow function
+
+- There’s another very simple and concise syntax for creating functions, that’s often better than Function Expressions.
+
+```JS
+    // Traditional
+    let func = function(arg1, arg2, ..., argN) {
+        return expression;
+    };
+    // Arrow function
+    let func = (arg1, arg2, ..., argN) => expression;
+```
 
 ### What is call stack
 
@@ -61,4 +75,7 @@ console.log('I am at the end of the file');
     3. Once the browser finishes those tasks, they return and are pushed onto the stack as 
     a callback
 
-
+### Enter Promises
+    - A Promises is an object representing the eventual completion or failure
+    of an asynchronous operation
+    - 
