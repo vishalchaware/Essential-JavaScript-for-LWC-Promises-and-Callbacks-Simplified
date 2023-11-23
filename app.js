@@ -1,10 +1,5 @@
-const person = {
-    firstName: 'Viggo',
-    lastName: 'Mortensen',
-    fullName: () => {
-        console.log(this)
-        return `${this.firstName} ${this.lastName}`
-    }
-}
+const arrowFunction = () => {
+    console.log(this);
+};
 
-person.fullName();
+arrowFunction();

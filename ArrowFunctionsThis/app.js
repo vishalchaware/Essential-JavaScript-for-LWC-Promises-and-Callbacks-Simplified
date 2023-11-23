@@ -1,7 +1,12 @@
-
-// It’s common that an object method needs to access the information stored in the object to do its job.
-// The value of this is evaluated during the run-time, depending on the context.
-// In JavaScript, keyword this behaves unlike most other programming languages. It can be used in any function, even if it’s not a method of an object.
+// Regular function
+// function regularFunction() {
+//     console.log(this);
+// }
+  
+// Arrow function
+// const arrowFunction = () => {
+//     console.log(this);
+// };
 
 
 // const person = {
@@ -14,8 +19,6 @@
 // }
 
 
-// arrow functions are special: they have no this. When this is accessed inside an arrow function, it is taken from outside
-
 // const person = {
 //     firstName: 'Viggo',
 //     lastName: 'Mortensen',
@@ -24,8 +27,6 @@
 //         return `${this.firstName} ${this.lastName}`
 //     }
 // }
-
-
 
 
 // const person = {

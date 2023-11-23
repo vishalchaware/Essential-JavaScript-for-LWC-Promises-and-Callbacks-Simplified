@@ -1,17 +1,3 @@
- // Example 1
-//  setTimeout(() => {
-//     document.body.style.backgroundColor = 'red';
-// }, 1000);
-
-// setTimeout(() => {
-//     document.body.style.backgroundColor = 'red';
-// }, 2000)
-
-// setTimeout(() => {
-//     document.body.style.backgroundColor = 'red';
-// }, 3000)
-
-// Example 2
 // ===============
 // YIKES!!!!!!!!!!!
 // ===============
@@ -51,18 +37,3 @@
 //         })
 //     })
 // });
-
-
-// searchMoviesAPI('amadeus', () => {
-//     saveToMyDB(movies, () => {
-//         //if it works, run this:
-//     }, () => {
-//         //if it doesn't work, run this:
-//     })
-// }, () => {
-//     //if API is down, or request failed
-// })
-
-
-
-
